@@ -1,632 +1,538 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>TK Precision Toolings</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
 
 </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">  
+            <div class="logo-container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo-title"><h6>longhei.sit@gmail.com</h6></div>
+                    <!--<img src="assets/imgs/Joysick logo.png" alt="">-->
+                </a>
+            </div>
 
-<body id="top">
+            <div class="container-navbar nav-container">       
+                <div onclick="Dropmenu()" class="hamburger-lines navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="line line1" id="line1"></span>
+                  <span class="line line2" id="line2"></span>
+                  <span class="line line3" id="line3"></span>
+                </div>  
+                <input class="checkbox" type="checkbox" name="" id="checkboxid" />
+
+                
+                <div class="menu-items collapse navbar-collapse" id ="navbarSupportedContent">        
+                    <ul class="shadow-button-set navbar-nav ml-auto">
+                        <li class="nav-item">        
+                            <button><a class="nav-link" href="#about"><small>01. </small>About</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button><a class="nav-link" href="#work"><small>02. </small>Work</a></button>
+                        </li>
+                        <li class="nav-item">
+                            <button><a class="nav-link" href="#contact"><small>03. </small>Contact</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <!--<div class="wrapper">
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+        </div>-->
+
+       
+        <!--<div class="overlay">
+            <div class="container-liquid">
+                <div class="liquid-shape"></div>
+            </div>
+        </div>-->
+
+        <div id="container-circular-text">
+            <div id="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                    <defs>
+                        <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+                    </defs>
+                    <circle cx="150" cy="100" r="75" fill="none"/>
+                    <g>
+                        <use xlink:href="#circlePath" fill="none"/>
+                        <text fill="#000">
+                            <textPath xlink:href="#circlePath">Click me! Click me! Click me! Click me! Click me! Click me! Click me! Click me! Click me! Click me! </textPath>
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <h1 class="subtitle"></h1>
+            <h1 class="title">JOYSICK STUDIO</h1>  
+        </div>
+
+        <div class="overlay">
+            <img id="img-joysick" src="assets/imgs/Logo-idle.png" onclick="ChangeImage()" alt="">           
+        </div>
+
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>
+        <!-- <div class="mouse-icon"><div class="wheel"></div></div> -->
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="about" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">About</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">Voluptates architecto provident deserunt.</h6>
+        </div>
+        <div class="wrapper-card">
+            <i class="fas fa-angle-left" id="left"></i>
+            <ul class="cards-carousel">       
+                <li class="card">
+                    <div class="card-1">
+                        <h1>Hello</h1>
+                        <div class ="card-1-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-2">
+                        <h1>Hello</h1>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-3">
+                        <h1>Hello</h1>
+                        <div class ="card-3-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-4">
+                        <h1>Hello</h1>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-5">
+                        <h1>Hello</h1>
+                        <div class ="card-5-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-3">
+                        <h1>Hello</h1>
+                        <div class ="card-3-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-4">
+                        <h1>Hello</h1>
+                        <div class ="card-4-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-1">
+                        <h1>Hello</h1>
+                        <div class ="card-1-container">
+                        </div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-2">
+                        <h1>Hello</h1>         
+                    </div>
+                </li>
+            </ul>
+            <i class="fas fa-angle-right" id="right"></i>
+        </div><br><br>
+
+        <div class="marquee-text">
+            <div class="marquee-text-track">
+              <p>JavaScript</p>
+              <p>TypeScript</p>
+              <p>CSS</p>
+              <p>TailwindCSS</p>
+              <p>Accessibility</p>
+              <p>React</p>
+              <p>Angular</p>
+              <p aria-hidden="true">JavaScript</p>
+              <p aria-hidden="true">TypeScript</p>
+              <p aria-hidden="true">CSS</p>
+              <p aria-hidden="true">TailwindCSS</p>
+              <p aria-hidden="true">Accessibility</p>
+              <p aria-hidden="true">React</p>
+              <p aria-hidden="true">Angular</p>
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- work Section -->
+    <section class="section" id="work">
+        <div class="container-work">
+            <div class="container">
+                <h6 class="section-title text-center">Recent works</h6>
+                <h6 class="section-subtitle text-center mb-5 pb-3">Voluptates architecto provident deserunt.</h6>
+                <div class="row justify-content-between">
     
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-jump">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="row">
-
-            <div class="header-logo">
-                <a class="site-logo" href="index.html"><img src="images/1.png" alt="Homepage"></a>
+                    <div class="container-services">
+                        <h1><h1>
+                            <svg class="w-full" height="100%" viewBox="0 0 1417 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M55.2212 168.456C19.1879 168.456 0.241308 139.629 0.241308 84.4166V83.9516C0.241308 29.088 22.21 0.493761 59.1732 0.493761C92.0682 0.493761 96.0202 21.8813 104.622 3.39968H122.987V56.2873H98.2287C97.5313 34.5511 87.8837 23.2761 66.1474 23.2761C41.854 23.2761 29.9979 41.6415 29.9979 79.1859V88.0199C29.9979 127.308 41.0403 145.557 62.7766 145.557C81.8394 145.557 97.0664 131.027 97.0664 110.337C97.0664 98.1325 94.7416 97.0863 64.8688 97.0863V78.721H133.216V97.0863C124.731 97.0863 124.149 97.6675 124.149 107.664V166.131H104.622C104.157 158.459 103.459 150.09 102.413 140.675H99.856C91.1383 158.924 77.3061 168.456 55.2212 168.456Z" fill="#282826"></path>
+                                <path d="M203.933 169.037C161.042 169.037 138.841 140.326 138.841 84.9975V84.5326C138.841 29.3202 161.042 0.493517 203.933 0.493517C246.708 0.493517 268.91 29.3202 268.91 84.5326V84.9975C268.91 140.326 246.708 169.037 203.933 169.037ZM203.933 146.138C227.646 146.138 239.153 128.354 239.153 91.2743V79.3019C239.153 41.525 227.646 23.2759 203.933 23.2759C180.105 23.2759 168.597 41.525 168.597 79.3019V91.2743C168.597 128.354 180.105 146.138 203.933 146.138Z" fill="#282826"></path>
+                                <path d="M318.563 166.131H265.443V147.765C277.997 147.765 278.694 147.184 278.694 137.071V32.4586C278.694 22.346 277.997 21.7648 265.443 21.7648V3.39943H311.124L357.037 98.8296C361.687 108.245 364.825 115.568 368.545 126.145L370.986 125.913C369.591 113.243 368.894 103.712 368.894 93.2503V32.4586C368.894 22.346 368.08 21.7648 355.643 21.7648V3.39943H408.763V21.7648C396.325 21.7648 395.512 22.346 395.512 32.4586V166.131H363.547L318.098 71.979C313.216 62.0989 309.845 53.7299 305.777 42.6874L303.452 43.0361C304.847 56.1708 305.312 65.3535 305.312 76.2798V137.071C305.312 147.184 306.126 147.765 318.563 147.765V166.131ZM536.744 166.131H414.114V147.765C426.668 147.765 427.365 147.184 427.365 137.071V32.4586C427.365 22.346 426.668 21.7648 414.114 21.7648V3.39943H535L536.163 58.1469H516.867C515.589 25.2519 513.845 22.5785 488.738 22.5785H456.192V74.5362H472.814C481.415 74.5362 482.229 72.9089 482.578 55.0085H499.316V110.57H482.578C482.229 92.6691 481.415 91.0418 472.814 91.0418H456.192V146.952H490.482C515.356 146.952 517.216 144.162 518.378 107.082H538.022L536.744 166.131Z" fill="#282826"></path>
+                                <path d="M681.431 166.131H618.431V147.765C630.984 147.765 631.682 147.184 631.682 137.071V32.4586C631.682 22.346 630.984 21.7648 618.431 21.7648V3.39943H738.154L739.317 61.0528H719.673C718.51 25.1357 716.651 22.5785 691.892 22.5785H660.508V81.0455H678.409C686.894 81.0455 687.824 79.3019 688.056 60.1229H704.795V118.474H688.056C687.824 99.4108 686.894 97.551 678.409 97.551H660.508V137.188C660.508 147.184 661.787 147.765 681.431 147.765V166.131ZM801.043 166.131H745.714V147.765C758.268 147.765 758.965 147.184 758.965 137.071V32.4586C758.965 22.346 758.268 21.7648 745.714 21.7648V3.39943H801.043V21.7648C788.606 21.7648 787.792 22.346 787.792 32.4586V137.071C787.792 147.184 788.606 147.765 801.043 147.765V166.131ZM870.906 168.92C836.732 168.92 833.129 149.044 826.736 166.131H807.324V107.199H831.967C831.967 135.444 842.079 147.417 866.954 147.417C886.947 147.417 897.64 139.629 897.64 126.029C897.64 113.475 889.504 107.664 869.279 100.108L849.635 92.6691C828.247 84.5326 812.206 73.6063 812.206 45.942C812.206 17.2316 832.315 0.609754 860.445 0.609754C891.828 0.609754 895.432 20.4862 901.941 3.39943H921.469V59.4255H896.71C896.594 33.5047 886.947 22.1135 865.791 22.1135C849.751 22.1135 839.406 29.4364 839.406 41.7575C839.406 53.3812 845.566 59.0767 867.303 67.2133L886.947 74.6524C907.288 82.3241 926.002 93.0178 926.002 120.682C926.002 150.322 904.382 168.92 870.906 168.92ZM990.867 166.131H932.4V147.765C944.953 147.765 945.651 147.184 945.651 137.071V32.4586C945.651 22.346 944.953 21.7648 932.4 21.7648V3.39943H990.867V21.7648C975.64 21.7648 974.477 22.346 974.477 32.4586V69.6543H1033.29V32.4586C1033.29 22.346 1032.25 21.7648 1017.02 21.7648V3.39943H1075.49V21.7648C1062.93 21.7648 1062.24 22.346 1062.24 32.4586V137.071C1062.24 147.184 1062.93 147.765 1075.49 147.765V166.131H1017.02V147.765C1032.25 147.765 1033.29 147.184 1033.29 137.071V91.0418H974.477V137.071C974.477 147.184 975.64 147.765 990.867 147.765V166.131ZM1136.17 166.131H1080.84V147.765C1093.39 147.765 1094.09 147.184 1094.09 137.071V32.4586C1094.09 22.346 1093.39 21.7648 1080.84 21.7648V3.39943H1136.17V21.7648C1123.73 21.7648 1122.92 22.346 1122.92 32.4586V137.071C1122.92 147.184 1123.73 147.765 1136.17 147.765V166.131ZM1194.52 166.131H1141.4V147.765C1153.96 147.765 1154.65 147.184 1154.65 137.071V32.4586C1154.65 22.346 1153.96 21.7648 1141.4 21.7648V3.39943H1187.08L1233 98.8296C1237.65 108.245 1240.78 115.568 1244.5 126.145L1246.95 125.913C1245.55 113.243 1244.85 103.712 1244.85 93.2503V32.4586C1244.85 22.346 1244.04 21.7648 1231.6 21.7648V3.39943H1284.72V21.7648C1272.28 21.7648 1271.47 22.346 1271.47 32.4586V166.131H1239.51L1194.06 71.979C1189.18 62.0989 1185.8 53.7299 1181.74 42.6874L1179.41 43.0361C1180.81 56.1708 1181.27 65.3535 1181.27 76.2798V137.071C1181.27 147.184 1182.09 147.765 1194.52 147.765V166.131Z" fill="#282826"></path>
+                                <path d="M1338.04 168.455C1302.01 168.455 1283.06 139.629 1283.06 84.4163V83.9514C1283.06 29.0877 1305.03 0.493517 1341.99 0.493517C1374.89 0.493517 1378.84 21.881 1387.44 3.39943H1405.81V56.2871H1381.05C1380.35 34.5508 1370.7 23.2759 1348.97 23.2759C1324.67 23.2759 1312.82 41.6413 1312.82 79.1857V88.0196C1312.82 127.308 1323.86 145.557 1345.6 145.557C1364.66 145.557 1379.89 131.027 1379.89 110.337C1379.89 98.1322 1377.56 97.0861 1347.69 97.0861V78.7207H1416.04V97.0861C1407.55 97.0861 1406.97 97.6673 1406.97 107.664V166.131H1387.44C1386.98 158.459 1386.28 150.09 1385.23 140.675H1382.68C1373.96 158.924 1360.13 168.455 1338.04 168.455Z" fill="#282826"></path>
+                            </svg>
+                            
+                        <img src="assets/imgs/devices-mockup.png" class="img-work-1">
+                        <ul class="shadow-button-set">
+                            <li class="nav-item">        
+                                <button style="font-size: 20px;"><a class="nav-link" href="https://www.eoc.org.hk/eodebate/index-english.html">URL</a></button>
+                            </li>
+                        </ul>
+                        <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        <div class="flower"></div>
+                    </div><br><br>
+            
+                    <div class="container-services-2">
+                        <h1><h1>
+                        <span class="line-inner" style="display: block; translate: none; rotate: none; scale: none; transform: translate(0px);">about us</span>
+                        <img src="assets/imgs/devices-mockup2.png" class="img-work-1">
+                        <p class="mb-0">Lorem ipsum dolor sit amet, cquasi cupiditate voluptate debitis saepe dolorem totam dolor repudiandae quo nihil, repellendus nesciunt ab fuga quae, minima reprehenderit sequi fugit.</p>
+                        <div class="starburst"></div>
+                    </div><br><br><br>         
+                </div>              
             </div>
-            
-            <nav class="header-nav-wrap">
-                <ul class="header-nav">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">about us</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">customer and product</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">contact us</a></li>
-                </ul>
-            </nav> <!-- end header-nav-wrap -->
-            
-            <a class="header-menu-toggle" href="#0">
-                <span class="header-menu-icon"></span>
-            </a>
+        </div>
+    </section>
+    <!-- End OF work Section -->
 
-        </div> <!-- end row -->
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-    ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/bsnner3D.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <h1>
-                
-                From design <br>
-                to production
-                
-                </h1>
-
-                <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn-animatedbg">
-                        about
-                    </a>
-                </div>
-
-                <div class="home-content__video">
-                    <a class="video-link" href="https://youtu.be/EF-fNjN82pU" data-lity>
-                        <span class="video-icon"></span>
-                        <span class="video-text">Play Video</span>
-                    </a>
-                </div>
-
-            </div> <!-- end home-content__main -->
-
-            <div class="home-content__scroll">
-                <a href="#about" class="scroll-link smoothscroll">
-                    scroll down
+    <!-- Portfolio Section
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">Our Portfolio</h6>
+            <h6 class="section-subtitle mb-5 text-center">New stunning projects for our amazing clients</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    New
+                </a>
+                <a href="#" data-filter=".advertising">
+                    Advertising
+                </a>
+                <a href="#" data-filter=".branding">
+                    Branding
+                </a>
+                <a href="#" data-filter=".web">
+                    Web
                 </a>
             </div>
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-social">
-            <li>
-                <a href="index.html">Eng</a>
-            </li>
-            <li>
-                <a href="indexchinese.html">中</a>
-            </li>
-        </ul> <!-- end home-social -->
-
-    </section> <!-- end s-home -->
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="01" class="subhead">Who We Are</h3>
-                <h1 class="display-1">
-                TK Precision Toolings Limited (TKPT)
-                </h1>
-                <p class="lead">
-                Formerly known as Kras Asia Ltd, was acquired by TK Group and re-established on 2002 followed the liquidation of Kras Asia Ltd. 
-                </p>
-            </div>
-        </div>
-
-        <div class="row about-process block-1-2 block-tab-full">
-
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__header item-process__header--OEM">
-                    <h3>Original equipment manufacturing-OEM</h3>
+            <div class="portfolio-container"> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>   
+                    </div>             
                 </div>
-                <p>
-                    KPT offers a wide variety of encapsulation solutions and techniques from our experienced design team. We offer Conventional, Bottom or Top Transfer Multi-Gang Pot (BTM-MGP / TTMGP) molds for IC, Discrete products...
-                    <br>
-                    From Manual System to Semi-Auto to Fully Auto Systems which incorporates Hardware and Software for backend assembly process. Apart from standard machines, TKPT offers flexibility to custom design systems and dies for endless customer design requirement.
-
-                </p>
-            </div>
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__header item-process__header--branding">
-                    <h3>Automated machinery</h3>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>                         
                 </div>
-                <p>
-                    TKPT also offer design, develop and manufacturing automated machinery comprising equipment and sub-assemblies system for other industries such as plastic, polishing material, packaging and etc...
-                    <br>
-                    Our automated machinery utilizing metal casting, metal fabrication, electronics assemblies as well as PLC control, we procure pneumatic, electronics and mechanical components from local and overseas suppliers. All of these components will assemble into sub-assemblies, modules or systems as complete machinery, final machine will subject to extensive inspection and testing before shipment to customers.
-                </p> 
-            </div>
-            <div class="col-block item-process" data-aos="fade-up">
-                <div class="item-process__header item-process__header--implementation">
-                    <h3>Precision machinery parts and Framework fabrication</h3>
-                </div>
-                <p>
-                    TKPT also make spare chase for Auto mold, spare dies and other critical spare parts from metal, non-metal and composite materials.
-                    <br>
-                    also manufacturing complete framework, stainless steel sheet, metal tubing, bend, form and painted sheet metal parts along with wiring will be assembled into complete framework.
-
-                </p>
-            </div>
-        </div>  <!-- end about-process -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services target-section">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="02" class="subhead2">Our services</h3>
-                <h1 class="display-1 display-1--light">
-                Our services are tailored to make your business grow and stand out.
-
-                </h1>
-                    <div class="row">
-                        <div class="column">
-                            <div class="column-h1"><h1></h1>
-                            <br>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
-                        <div class="column">
-                            <img src="">
+                    </div>                                                     
+                </div>
+
+                <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
                         </div>
-                
-                    </div>
-                    
-            </div>
-        </div>
-        
-        
-    </section> <!-- end s-services -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="03" class="subhead">客戶</h3>
-                <h1 class="display-1">
-                our customer
-                </h1>
-                <p>Our business partners cover the world, mainly in Asia, Europe and the United States. Our team will be able to reach you all over the world.</p>
-                
-                <img src="images/worldmap.png">
-            </div>
-            <div class="logos-brand">
-                <img src="images/logos/vishay.jpg" width="150px">
-                <img src="images/logos/honeywell.jpg" width="250px">
-                <img src="images/logos/fagor.jpg" width="220px">
-                <img src="images/logos/kla.jpg" width="270px">
-                <img src="images/logos/belfuse.jpg" width="170px">
-                <img src="images/logos/on-semi.jpg" width="370px">
-                <img src="images/logos/allegro.jpeg" width="270px">
-                                                           
-                
-                
-            
-            </div>
-            
-            
-        </div>
-        <br>
-        <br>
-        <br>
-        
-        
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="04" class="subhead">products</h3>
-                    <div class="col-full">
-                        <h1 class="display-1">
-                            our recents project and products
-                        </h1>
-                    </div>
-            </div>
-        </div>
-
-        <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse">
-            
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture1.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                        <img src="images/portfolio/picture1.jpg" 
-                             srcset="images/portfolio/picture1.jpg 1x, images/portfolio/picture1@2x.jpg 2x" alt="">
-                    </a>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
                 </div>
-                
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        Web Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture2.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
-                        <img src="images/portfolio/picture2.jpg" 
-                             srcset="images/portfolio/picture2.jpg 1x, images/portfolio/picture2@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        Branding
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture3.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                        <img src="images/portfolio/picture3.jpg" 
-                             srcset="images/portfolio/picture3.jpg 1x, images/portfolio/picture3@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        Web Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture4.jpg" class="thumb-link" title="Droplet" data-size="1050x700">
-                        <img src="images/portfolio/picture4.jpg" 
-                             srcset="images/portfolio/picture4.jpg 1x, images/portfolio/picture4@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                       lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        Web Development
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture5.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                        <img src="images/portfolio/picture5.jpg" 
-                             srcset="images/portfolio/picture5.jpg 1x, images/portfolio/picture5@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        Web Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture6.jpg" class="thumb-link" title="Minimalismo" data-size="1050x700">
-                        <img src="images/portfolio/picture6.jpg" 
-                             srcset="images/portfolio/picture6.jpg 1x, images/portfolio/picture6@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        UX Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-            
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture7.jpg" class="thumb-link" title="Minimalismo" data-size="1050x700">
-                        <img src="images/portfolio/picture7.jpg" 
-                             srcset="images/portfolio/picture7.jpg 1x, images/portfolio/picture7@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        UX Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-            <div class="col-block item-folio" data-aos="fade-up">
-
-                <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-picture8.jpg" class="thumb-link" title="Minimalismo" data-size="1050x700">
-                        <img src="images/portfolio/picture8.jpg" 
-                             srcset="images/portfolio/picture8.jpg 1x, images/portfolio/picture8@2x.jpg 2x" alt="">
-                    </a>
-                </div>
-
-                <div class="item-folio__text">
-                    <h3 class="item-folio__title">
-                        lorum ipsum
-                    </h3>
-                    <p class="item-folio__cat">
-                        UX Design
-                    </p>
-                </div>
-
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                    Project Link
-                </a>
-
-                <div class="item-folio__caption">
-                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                </div>
-
-            </div> <!-- end item-folio -->
-
-
-
-        </div> <!-- end portfolio -->
-
-    </section> <!-- end s-works -->
-
-    <!-- stats
-    ================================================== -->
-    <section id="stats" class="s-stats">
-
-        <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
-            <div class="col-block item-stats ">
-                <div class="item-stats__count">213</div>
-                <h5>completed project</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">179</div>
-                <h5>customer likes</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">35</div>
-                <h5>award earings</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">2319</div>
-                <h5>coffee</h5> 
-            </div>
-
-        </div> <!-- end stats -->
-
-    </section> <!-- end s-stats -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="05" class="subhead">contact us</h3>
-                <h1 class="display-1 display-1--light">
-                    share any thoughts or idea with us, 
-                </h1>
-            </div>
-        </div>
-
-        <div class="row contact-infos">
-
-            <div class="col-five md-seven tab-full contact-address" data-aos="fade-up">
-                <h4>Find us</h4>
-
-                <p>
-                TK Precision Toolings Limited (TKPT)<br>
-                Room B, 5 / F, Century Industrial Centre, 33-35 Au Pui Wan Street, Fo Tan, Hong Kong<br>
-                </p>
-                <ul class="contact-list">
-                    <li><a href="mailto:#0">Tel  +852-2604 9369</a></li>
-                    <li><a href="tel:197-543-2345">Phone  +852-9156 8823</a></li>
-                    <li><a href="tel:197-123-9876">Fax  +852-2602 3334</a></li>
-                </ul>
-                <p>
-                Kras Asia(Shenzhen)Ltd<br><br>
-                Guangming High-tech Industrial Park, Guangming New District, Shenzhen, Guangdong, China<br><br>
-                
-                </p>
-                <ul class="contact-list">
-                    <li><a href="mailto:#0">Tel  +86-755-2369 2900</a></li>
-                    <li><a href="tel:197-543-2345">(Direct)  2369 2938</a></li>
-                    <li><a href="tel:197-543-2345">Fax  +86-755-2369 2909</a></li>
-                    <li><a href="tel:197-543-2345">postal code  518107</a></li>
-                    <li><a href="tel:197-123-9876">Phone  +86-138 2369 3023</a></li>
-                    <li><a href="tel:197-123-9876">Email  kksit@kras-tkpt.com</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-        <div class="row contact-bottom">
-            <div class="col-five tab-full contact-button" data-aos="fade-up">
-                <a href="#about" class="smoothscroll btn btn-animatedbg">
-                    contact us
-                </a>
-            </div>
-        </div> <!-- end contact-button -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full cl-copyright">
-               
-            </div>
-        </div>
-
-        <div class="cl-go-top">
-            <a class="smoothscroll" title="scroll top" href="#top"></a>
-        </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
                             </div>
                         </div>
                     </div>
+                            
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                      
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                   
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+            </div>   
+        </div>            
+    </section>
+    End of portfolio section -->
+
+    <!-- Blog Section 
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">Latest Articles</h6>
+            <h6 class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title"> Harum Quae Porro</h5>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Qui optio neque alias</h6>
+                            <p>Fuga quae ratione inventore Perferendis porro.</p>
+                            <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </section>
+    End of Blog Section -->
 
-    </div><!-- end photoSwipe background -->
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Phone</h6>
+                    <p class="mb-4">+ 123-456-7890</p>
 
+                    <h6 class="mb-0">Address</h6>
+                    <p class="mb-4">12345 Fake ST NoWhere AB Country</p>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">info@website.com</p>
+                    <p></p>
+                </div>
+                <!--<div class="col-md-7">
+                    <form>
+                        <h4 class="mb-4">Drop Us A Line</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Message"></textarea>
 
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <button type="submit" class="btn btn-primary rounded w-md mt-3">Send</button>
+                            </div>                          
+                        </div>                          
+                    </form>
+                </div>-->
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <!--<p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, LeadMark Created By <a href="https://www.devcrud.com" target="_blank">DevCrud.</a>  All rights reserved </p>     -->
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
 </body>
+</html>
